@@ -1,0 +1,708 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="">
+  
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+  <title>zty</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>zty's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/bg_1.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Hello! This is zty's blog">
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/27/16_midnight_reflect/">Sixteenth Blog	2021/4/27</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/27/16_midnight_reflect/">
+          
+          
+            
+          
+          三天失眠之思？就取这个题目了晚上睡不着，事实上已经好几天睡不着了，之前几天都是因为实在太累而勉强入睡，俗话说，事不过三，到了今天晚上我觉得这已经不是一个小事情了
+怕影响室友休息，我现在坐在楼梯间的楼梯上面打字，有点凉。。
+正如我在上一篇blog，当然，上传的时候那一篇blog出了点意外，不知道这篇会不会有问题，中说的，我已经处在一个非常极限的状态之中
+坦率的讲，这段时间高强度的生活极大地消耗了我的
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-27 02:03" pubdate>
+              2021-04-27
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/27/15_some_feeling/">Fifteenth Blog	2021/4/27</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/27/15_some_feeling/">
+          
+          
+            
+          
+          感慨，有点累感觉自己已经到了一个极限，但是还有很多事情推着自己不断往前，就像跑10km一样，到后面完全凭借着意念在跑
+最近几天休息的不太好，感觉压力也挺大的，不知道为什么，弹簧绷久了也会疲劳吧，唉
+好多好多事情，我不知道该怎么办，唉
+这就是生活吗，唉
+这么晚还不睡，太不好了，哈哈，笑不出来
+各种各样的事情吧，也蛮正常的，生活就是充满了起起伏伏
+“life is like a box of choc
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-27 00:33" pubdate>
+              2021-04-27
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/22/14_sad/">Fourteenth blog	2021/4/22</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/22/14_sad/">
+          
+          
+            
+          
+          随记，一点点伤感一个多月没有出过校门了，一个多月没有回过家了，一个多月没有好好放松过了，感觉好累啊
+记得高中的时候，每周就是周一期盼周二，周二盼周三，周三盼周四，到了周四就学不下去了，因为周五马上就可以回家了，然后回家玩两天，满怀愧疚地周日到学校开始学习，啊，满满的回忆啊
+然后到了期末周就一点也不想学习，因为马上就能够放假了
+现在好像也没有什么不同——想家，考试周之后就是一个小长假，想要休息一段时
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-22 22:26" pubdate>
+              2021-04-22
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/17/13_week_summary/">thirteenth blog	2021/4/17</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/17/13_week_summary/">
+          
+          
+            
+          
+          一周小结刚写完运动会，摸了会儿鱼，随便总结一下这一周吧
+总体上这一周已经清楚地感受到了课内生活的压力，虽然这种压力不到万不得已的时候是无法对我产生推动作用的。。。
+昨天在校园里逛，具体的没有在空间里说
+我们参考了《上海交通大学闵行校区有哪些适合哭的地方》下面的一个回答，应该是学长写的。我们去了农生学院的实验田、海洋学院后面的小路、理科群楼的露台、屋里实验楼，但也有一些地方没有找到，事实上就是对校园
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-17 20:14" pubdate>
+              2021-04-17
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/17/12_sports_meeting/">Twelvth blog	2021/4/17</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/17/12_sports_meeting/">
+          
+          
+            
+          
+          记运动会思考过究竟在空间发这个还是在blog上，后面还是觉得写到blog上，因为空间没有必要说这些，就说我说的那些就挺好（笑）
+可能还是不放照片了吧(绝不是因为我懒)，可能我暂时更喜欢纯文字？
+先说运动会，从三月底报名运动会到现在也就三个礼拜吧，当时想的就是通过运动会这样一个活动来激励自己去挑战、突破自己的极限。回想起高三的时候跑1000m几乎要昏倒，不得不感慨身体素质的巨大提高，当然1km和10
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-17 19:36" pubdate>
+              2021-04-17
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/11/11_reflect/">Elevnth blog	2021/4/11</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/11/11_reflect/">
+          
+          
+            
+          
+          #反思，针对过去一周
+促使我写下这篇反思的主要原因是大物mooc作业没有做到100分，电路理论作业忘记了截止日期。。。
+不太理想。。。
+确实有一些问题，我感觉现在的状态和高二下的时候很像，但是高二下以及高二上在我的观点中一直是是存在着许多问题的，当然，每一阶段回过头来都会觉得自己有问题。高二下的一个很大的问题，就是没有平衡好化学竞赛和课内，这也是高二上遗留下来的问题。当下的状态和高二上就很像，我不
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-11 20:59" pubdate>
+              2021-04-11
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/10/10_week_summary/">Tenth blog	2021/4/10</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/10/10_week_summary/">
+          
+          
+            
+          
+          随记，我想好名字了，一周小结我意识到这个blog一个非常大的作用了，基本上算是一个一周小结，每个周末都会想要总结梳理一下这一周做了些什么，“一周小结”这个标题估计以后会常用，哈哈。
+这周几乎每天都跑步，事实上除了周三没有跑，其它时候都在跑，明天估计也要跑，报名运动会的10km感觉会是我大学生活中非常重要的一件事，它真的改变了我，说起来可能有些夸张，但就是这两个礼拜，影响就已经很大了。首先是变瘦了，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-10 23:43" pubdate>
+              2021-04-10
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/03/nin_map_week_summary/">Ninth blog	2021/4/3</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/03/nin_map_week_summary/">
+          
+          
+            
+          
+          随记，map写完有感 &amp;&amp; 一周小结之前一段时间发生了蛮多事情的，现在也都算是暂告一段落，当然，还有一些事情还在进行，但我也尝试不要让它过多地影响到我的日常生活，现在这样就挺好
+每天在寝室里敲敲代码、到图书馆写写作业，如果我能够多学一点课内就更好了
+当然，这段时间我参加活动的频率明显降低了，常常觉得这个活动有必要吗？想了想，觉得还是算了，感觉自己的圈子蛮小的，但也还行吧
+Map写完
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-03 23:03" pubdate>
+              2021-04-03
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/03/28/eig_rev/">Eighth Blog	2021/3/28</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/03/28/eig_rev/">
+          
+          
+            
+          
+          复习有感之前所说学积分要再提高三分，这样就能够很顺利地保研
+但是，对于我而言，这件事情好像没有那么有意义
+这两天复习数分、写作业，效率实在低下，当然，也确实做了一些工作，但着实不能令人满意
+转念一想：学什么？（书面用语当文明），爱考几分考几分，开始看我的map
+写map的感觉就很不一样，你自己去想该怎么写，遇到问题解决问题，很投入的，很有意思的
+下午听乔布斯演讲（英语作业），说要追寻自己内心，甚善
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-03-28 20:01" pubdate>
+              2021-03-28
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/03/19/sev_reflect/">Seventh blog	2021.3.19</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/03/19/sev_reflect/">
+          
+          
+            
+          
+          反思如果这篇文章真的让我觉得可以发到我的主页上，不得不说，我这个主页使用的是相当频繁，超出我的预期
+To be honest，精神状态不是很好，蛮不行的
+挺多时候尝试让自己变得坚强，可能很多时候看我觉得我斗志昂扬
+很抱歉，有时候给自己的压力是一直存在的，只是积少成多，最后总会释放出来
+这样的事情发生的多了，我自己也有经验了，知道自己的一些行为对应什么精神状态
+刚刚对我妹妹发火了，当然，一般她不守承
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-03-19 23:11" pubdate>
+              2021-03-19
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
