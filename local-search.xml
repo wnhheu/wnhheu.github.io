@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>好累啊</title>
+    <link href="/2021/05/05/16_tired/"/>
+    <url>/2021/05/05/16_tired/</url>
+    
+    <content type="html"><![CDATA[<h1 id="五四有感"><a href="#五四有感" class="headerlink" title="五四有感"></a>五四有感</h1><a id="more"></a><p>哈哈，起这个名字。。</p><p>好累，明天去顾村公园，但是事情总不是一帆风顺的</p><p>这种感觉好熟悉——因为自己的种种原因而压力很大</p><p>但是后来这些压力都会过去的，我相信明天会更好</p><p>有机会再写一个感想吧，要睡了</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>-生后随记</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>log</title>
     <link href="/2021/05/01/update/"/>
     <url>/2021/05/01/update/</url>
@@ -225,25 +244,6 @@
   
   
   <entry>
-    <title>获取知识</title>
-    <link href="/2021/03/13/fif_acquiring_knowledge/"/>
-    <url>/2021/03/13/fif_acquiring_knowledge/</url>
-    
-    <content type="html"><![CDATA[<h1 id="谈谈我关于知识的获取"><a href="#谈谈我关于知识的获取" class="headerlink" title="谈谈我关于知识的获取"></a>谈谈我关于知识的获取</h1><a id="more"></a><p>寒假我妈让我学习一下VASP怎么用，我一开始毫无头绪，后面知道要先装虚拟机，然后再装intel的一个多线程运算的东西，再装VASP软件</p><p>这一过程一开始在我看来简直困难重重，Linux对我而言感觉一直是一个很高大、很遥远的东西，intel的那个东西和VASP由于过于小众，几乎没有教程</p><h2 id="问题的解决"><a href="#问题的解决" class="headerlink" title="问题的解决"></a>问题的解决</h2><pre><code>具体过程不详细讲了，基本上就是看各种各样的博客，加上bilibili和youtube上各种各样的视频，然后我还自学了Linux下用vscode进行编译，可以说对Linux有了初步的了解，像我写这个blog就是在Linux下进行的。虽然暂时VASP并没有多大用，但是这使我有了一定程度上自己去查找资源、解决问题的能力</code></pre><h2 id="知识的获取"><a href="#知识的获取" class="headerlink" title="知识的获取"></a>知识的获取</h2><pre><code>实践证明，如果自己又不会的东西，先百度，因为百度我感觉对于中文搜索的支持比较好；然后考虑google，google的内容质量显著高于百度，但是可能对我而言对英文还是有点畏惧；感觉学习方面的资源，B站并不比YouTube逊色，很多东西中文都有讲的很好的老师，英文的话，固然讲的很好，但是将其理解对于我来说是很有难度的一件事</code></pre><p>这篇blog没什么太多内容，就讲一讲我自己收获的解决问题的思维，像之前同学问我会不会写个人主页，我的第一反应就是</p><blockquote><p>能不能做？<br>怎么做？<br>具体如何实践？</p></blockquote><p>我现在听到一个东西，不太会说不会做，而是会说，看一看，我试一试。很多东西都可以靠自己摸索来实现，而这一过程也是对自己能力的提升</p><p>想说的差不多都说了，一共五篇blog，凝聚了我自己的一些思考，后面再写可能需要时间的积淀，才能够再有一些东西来说</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>-学习</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>恋爱之思</title>
     <link href="/2021/03/13/fou_love/"/>
     <url>/2021/03/13/fou_love/</url>
@@ -254,6 +254,25 @@
     <categories>
       
       <category>-思考</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>获取知识</title>
+    <link href="/2021/03/13/fif_acquiring_knowledge/"/>
+    <url>/2021/03/13/fif_acquiring_knowledge/</url>
+    
+    <content type="html"><![CDATA[<h1 id="谈谈我关于知识的获取"><a href="#谈谈我关于知识的获取" class="headerlink" title="谈谈我关于知识的获取"></a>谈谈我关于知识的获取</h1><a id="more"></a><p>寒假我妈让我学习一下VASP怎么用，我一开始毫无头绪，后面知道要先装虚拟机，然后再装intel的一个多线程运算的东西，再装VASP软件</p><p>这一过程一开始在我看来简直困难重重，Linux对我而言感觉一直是一个很高大、很遥远的东西，intel的那个东西和VASP由于过于小众，几乎没有教程</p><h2 id="问题的解决"><a href="#问题的解决" class="headerlink" title="问题的解决"></a>问题的解决</h2><pre><code>具体过程不详细讲了，基本上就是看各种各样的博客，加上bilibili和youtube上各种各样的视频，然后我还自学了Linux下用vscode进行编译，可以说对Linux有了初步的了解，像我写这个blog就是在Linux下进行的。虽然暂时VASP并没有多大用，但是这使我有了一定程度上自己去查找资源、解决问题的能力</code></pre><h2 id="知识的获取"><a href="#知识的获取" class="headerlink" title="知识的获取"></a>知识的获取</h2><pre><code>实践证明，如果自己又不会的东西，先百度，因为百度我感觉对于中文搜索的支持比较好；然后考虑google，google的内容质量显著高于百度，但是可能对我而言对英文还是有点畏惧；感觉学习方面的资源，B站并不比YouTube逊色，很多东西中文都有讲的很好的老师，英文的话，固然讲的很好，但是将其理解对于我来说是很有难度的一件事</code></pre><p>这篇blog没什么太多内容，就讲一讲我自己收获的解决问题的思维，像之前同学问我会不会写个人主页，我的第一反应就是</p><blockquote><p>能不能做？<br>怎么做？<br>具体如何实践？</p></blockquote><p>我现在听到一个东西，不太会说不会做，而是会说，看一看，我试一试。很多东西都可以靠自己摸索来实现，而这一过程也是对自己能力的提升</p><p>想说的差不多都说了，一共五篇blog，凝聚了我自己的一些思考，后面再写可能需要时间的积淀，才能够再有一些东西来说</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>-学习</category>
       
     </categories>
     
