@@ -8,9 +8,15 @@
     <link href="/2021/07/13/test/"/>
     <url>/2021/07/13/test/</url>
     
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="d0e8f842e6092b052fd60930b62f82130147e24d3cb353e7cb4dc512070147a8">bd25ed9264b080267271e137e33d0ce118960a041ac35a180347d4bc9710c7dccb6697b185fd04e28e2fc73764fd32bbef4ab1df0be348a41d53d1ba6d4a248d3887a9bce3fd366e4e50c6293caa9b0d7c93930e8ccd67dd05fd947d0cfe943360568d5b368b1e2fc43dc6e051f711867cd0af716de51317c77263163107ea6fa824af2346fa102126ba25a174bb42955db4dd26a7ffb1e57a30f2285896b8ceb772883609bb97108337aeeda9431325</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="Oh, these decrypted content cannot be verified, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="f30cd80d47514fac190cd4f65e21344edfe5057ea73f012175ecd0755f68e70b">c40dbe413c127793f527b27793f81d79e0095b71d039f474051c513c0ac5d0a6014286144daa8e78ec746dbae356648b0498967dddae85ca4765d47d19ed926c21cb26bcf5148a6f7fa58319cb23b447fedd9ce1fd9c90d4135e53044ce4deacf8e90045c27d0775aa957cec6dd0befe35f6c805b546cb99f6c72538b57ae1bdb37782ada59a27ca3e037ea395754a8bfe2c17fa930034abb720ea046b01890a6baf770803203ba49aed3dc8cfcf208e</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
     
     
+    
+    <tags>
+      
+      <tag>-encryptAsDiary</tag>
+      
+    </tags>
     
   </entry>
   
