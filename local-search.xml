@@ -200,25 +200,6 @@
   
   
   <entry>
-    <title>log</title>
-    <link href="/2021/05/01/update/"/>
-    <url>/2021/05/01/update/</url>
-    
-    <content type="html"><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><a id="more"></a><h2 id="version-1-0-0-2021-2"><a href="#version-1-0-0-2021-2" class="headerlink" title="version 1.0.0 2021/2"></a>version 1.0.0 2021/2</h2><blockquote><p>创建了自己的blog</p></blockquote><h2 id="version-1-0-0-2021-2-1"><a href="#version-1-0-0-2021-2-1" class="headerlink" title="version 1.0.0 2021/2"></a>version 1.0.0 2021/2</h2><blockquote><p>添加了访客记录功能</p></blockquote><h2 id="version-2-0-2021-5-2"><a href="#version-2-0-2021-5-2" class="headerlink" title="version 2.0 2021/5/2"></a>version 2.0 2021/5/2</h2><blockquote><p>完善了blog的布局，增加了“about”页</p><p>完善了blog的布局，增加了“link”页</p><p>完善了blog的背景图片，不再采用默认图片</p></blockquote><h2 id="version-3-0-2021-5-3"><a href="#version-3-0-2021-5-3" class="headerlink" title="version 3.0 2021/5/3"></a>version 3.0 2021/5/3</h2><blockquote><p>对已经写好的文章进行了格式上的整理，没有改变内容</p><p>完善了每篇文章的分类/标签</p><p>第一阶段维护结束</p></blockquote><h2 id="version-4-0-2021-7-13"><a href="#version-4-0-2021-7-13" class="headerlink" title="version 4.0 2021/7/13"></a>version 4.0 2021/7/13</h2><blockquote><p>引入了加密功能</p><p>初步回顾过去的一个学期的内容</p><p>原则上不删除原有内容，做一些补充</p><p>对部分blog的内容进行更新，加入一些现在的看法</p><p>计划实现置顶、优化分类等功能</p><p>第二阶段维护开始</p></blockquote>]]></content>
-    
-    
-    <categories>
-      
-      <category>-维护日志</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>修好了</title>
     <link href="/2021/05/01/15_repaired/"/>
     <url>/2021/05/01/15_repaired/</url>
@@ -229,6 +210,25 @@
     <categories>
       
       <category>-更新日志</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>log</title>
+    <link href="/2021/05/01/update/"/>
+    <url>/2021/05/01/update/</url>
+    
+    <content type="html"><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><a id="more"></a><h2 id="version-1-0-0-2021-2"><a href="#version-1-0-0-2021-2" class="headerlink" title="version 1.0.0 2021/2"></a>version 1.0.0 2021/2</h2><blockquote><p>创建了自己的blog</p></blockquote><h2 id="version-1-0-0-2021-2-1"><a href="#version-1-0-0-2021-2-1" class="headerlink" title="version 1.0.0 2021/2"></a>version 1.0.0 2021/2</h2><blockquote><p>添加了访客记录功能</p></blockquote><h2 id="version-2-0-2021-5-2"><a href="#version-2-0-2021-5-2" class="headerlink" title="version 2.0 2021/5/2"></a>version 2.0 2021/5/2</h2><blockquote><p>完善了blog的布局，增加了“about”页</p><p>完善了blog的布局，增加了“link”页</p><p>完善了blog的背景图片，不再采用默认图片</p></blockquote><h2 id="version-3-0-2021-5-3"><a href="#version-3-0-2021-5-3" class="headerlink" title="version 3.0 2021/5/3"></a>version 3.0 2021/5/3</h2><blockquote><p>对已经写好的文章进行了格式上的整理，没有改变内容</p><p>完善了每篇文章的分类/标签</p><p>第一阶段维护结束</p></blockquote><h2 id="version-4-0-2021-7-13"><a href="#version-4-0-2021-7-13" class="headerlink" title="version 4.0 2021/7/13"></a>version 4.0 2021/7/13</h2><blockquote><p>引入了加密功能</p><p>初步回顾过去的一个学期的内容</p><p>原则上不删除原有内容，做一些补充</p><p>对部分blog的内容进行更新，加入一些现在的看法</p><p>计划实现置顶、优化分类等功能</p><p>第二阶段维护开始</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>-维护日志</category>
       
     </categories>
     
