@@ -1,0 +1,614 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="两年了，可能从开始的地方再出发">
+  
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+  <title>70_Blog - zty</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 90vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>zty's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/blog_background.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="70_Blog">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-03-12 21:59" pubdate>
+        2023年3月12日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      33
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">70_Blog</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2023年3月31日 早上
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h1 id="两年了，可能从开始的地方再出发"><a href="#两年了，可能从开始的地方再出发" class="headerlink" title="两年了，可能从开始的地方再出发"></a>两年了，可能从开始的地方再出发</h1><a id="more"></a>
+
+<p>构思这篇文章很久了，差不多一个月之前就有这样的想法，但是一直没有想好怎么写，因为一直有一些事情没有解决。之前想的是等到开学和同学聊一聊，或许会有思路。现在我大概对过去两年，过去几个月，我自己，有一个阶段性的总结。这篇文章是一篇总结性的文章，也大概是我blog重新写的第一篇文章，因为我认为我部分找回了两年前写blog的那份心境，虽然不知道这份心境能够保持多久。</p>
+<h2 id="迷茫"><a href="#迷茫" class="headerlink" title="迷茫"></a>迷茫</h2><p>大一下本来是没什么迷茫的，迷茫的是遇到了lsk，从她开始，2021年就是迷茫的（笑）</p>
+<p>迷茫的原因大概是我见到了一个，唔，很开朗，很包容，很有生命力的人吧，当时觉得是心动的感觉。</p>
+<p>不过昨天和jkd（a random name）聊天，他指出，这种情况下，实际上喜欢的人本身是有一些自己的特质在的</p>
+<p>我觉得是有道理的，可能lsk某种程度上是我想要成为的人，或者我的身上有一些和她相似的特点，比如当时从她身上看到的乐观、对社会的关怀，等等</p>
+<p>迷茫的直接后果就是自己的精神状态不好，然后骑车摔了，手臂摔折了（笑）</p>
+<p>后面等到大二上，也就是21年下半年，实际上是在延续上半年的迷茫，并且这种迷茫在右脚踝骨折之后达到了极点</p>
+<p>那时候写了几篇文章，更多的是疑问，不知道为什么会是这个样子啊</p>
+<p>21年就是在迷茫和挣扎中度过的，不太理想的是后面命运就来敲门了（笑）</p>
+<h2 id="“咚咚咚”"><a href="#“咚咚咚”" class="headerlink" title="“咚咚咚”"></a>“咚咚咚”</h2><p>大二上学期的结束是以高中同学也是大学同学的去世开始的</p>
+<p>我们大一寒假一起去过厦门，大二那年过年刚刚一起回过学校，出事前一个礼拜还在路上碰到他</p>
+<p>一切都非常突然，因为去过厦门，家长互相有联系方式，他妈妈联系到我爸，然后我就全程经历了这件事情</p>
+<p>实际上后来已经基本上知道结果了，但是不敢再去和他妈妈打电话确认，最后高中同学让我还是打个电话</p>
+<p>我记得当时是在包图的楼梯间打的电话，手里拿着一瓶挺满的水，但是盖子应该没盖紧，当时直接把瓶子捏爆了，水顺着我的手留下来，眼泪从眼睛里留出来</p>
+<p>后面稍，收拾了一下心情，主要是不想让同学担心，当时和两个同学准备美赛，所以强作镇定回去，大概说了一下情况之后一起回寝室</p>
+<p>等到在路口分开，我给妈妈打了个电话，电话接通之后眼泪就完全停不下来。我至今记得在哈乐旁边的那条路哇哇的哭，记得我迷茫的冲上寝室的楼梯，记得第二天早上十一点半被妈妈打电话叫醒的场景</p>
+<p>本来还想在学校留几天的，同学去世之后第二天就让妈妈接我回家了，回到家之后就给我和我妹妹办了两张迪士尼的年卡</p>
+<p>去迪士尼的时候我记得很清楚，她在那边耍小脾气，“就要”，然后我不答应她，她就哭，我后面就抱着她一起哭</p>
+<p>但是去了迪士尼之后感觉还是好不少，至少人还是稍微像个人了</p>
+<p>后面就浑浑噩噩地了，一直到开学</p>
+<h2 id="弹簧"><a href="#弹簧" class="headerlink" title="弹簧"></a>弹簧</h2><p>大二下开学之后去了一趟心理咨询，实际上没什么用的，心理咨询解决不了啥东西，但是当时那个状态也就是找个人说说话罢了</p>
+<p>后面我记得应该是周三，去帮一个朋友配环境，她可能一直状态都不是很好，我后面就问她发生了什么</p>
+<p>然后两个人绕着思源湖走啊走的，我记得很清楚，当时自己在说冷笑话，很冷的那种，脸上一直挂着傻笑，很傻的那种</p>
+<p>后面把她送回寝室，整个人的精气神像被抽走了一样，真的想瘫在地上，蜷缩成一团</p>
+<p>然后还是挪回了寝室，回寝室已经十一点半还是要十二点了，当时找我室友让他抱抱我</p>
+<p>抱一抱人会好一点，后面就瘫在椅子上缩成一团（笑）</p>
+<p>人就像弹簧一样，当你状态好的时候你有很多的余量，可以压缩一些给别人提供能量</p>
+<p>但是当弹簧本身已经被压的很紧了，可是还是想给予他人帮助，这种时候只能提供一些很小的帮助，同时弹簧本身也无法承受压力了</p>
+<p>会不会觉得之前的故事太糟糕了（笑），请放心，后面会有一点好消息的（笑）</p>
+<h2 id="恋爱"><a href="#恋爱" class="headerlink" title="恋爱"></a>恋爱</h2><p>想不到吧！像我这样的人还能谈一段恋爱，我自己也想不到呢（笑）</p>
+<p>之前和jkd聊了聊，只能说我们两个在封城那段时间的情感生活实在太像了，很奇妙的</p>
+<p>与其说是始于心动，不如说是始于迷茫，这是我对那段恋爱的理解</p>
+<p>我没有办法从她那里学到什么东西，两个人表面的相似之处在很短的时间内通过大量的聊天聊完之后，基本上就可以一拍两散了，是两个不一样的人，很底层的不一样</p>
+<p>我的角度来说很感谢她，没有她我不知道大二下学期封城那段日子我怎么过</p>
+<p>谈的过程也会有一些激素的分泌，也是挺开心的一段过程，从纯生物的角度解释是不是很没劲啊（笑）</p>
+<p>但是根本上来说谈恋爱的目的就不对，所以结果上来说自然也不是很理想</p>
+<p>不过不要紧的，毕竟我至少知道我不想谈什么样的恋爱了（笑），后面大概就等啊等啊，等啊等啊，等缘份吧</p>
+<h2 id="逃避"><a href="#逃避" class="headerlink" title="逃避"></a>逃避</h2><p>不知道怎么样去描述大三上，想了想可能这个描述会比较合适</p>
+<p>虽然还有一些心气，觉得要做一些东西，但是实际上就是得过且过，间歇性踌躇满志，持续性混吃等死</p>
+<p>这段时间一周回一次家，自己骑车回去，回学校也只是上上体育课和实验课</p>
+<p>然后就是沉迷游戏，你像我现在早上九点多起床，放到上个学期肯定是直接打游戏打到中午的，下午继续打，晚上继续</p>
+<p>这么看来好像大三上是状态最差的诶，是一堆debuff的叠加</p>
+<p>这么差的状态到最后就是对专业的怀疑、对人生的迷茫</p>
+<p>中间自己犯了一个很严重的错误，那个错误让我对自己的状态有一个很初步的反思，最后blog也停了差不多到现在两个月，这是有意识地停了，想给自己一段时间去找一找答案</p>
+<p>既然我又想重新写blog了，那意味着我找到了一个我可以接受的答案了（笑）</p>
+<p>这一段时间还有一些很大的事情，但是我可能不方便在这里多说，一个挺大的事情就是我爸抑郁了，这对我的影响很大`</p>
+<h1 id="一点结论"><a href="#一点结论" class="headerlink" title="一点结论"></a>一点结论</h1><p>之前说过我自己是迷茫的，迷茫在未来怎么走，自己以后的人生怎么过</p>
+<p>但是这个描述是非常宽泛的，这样的描述本身就是一种迷茫</p>
+<p>我现在找到了一个初步的答案了，当然只是初步的答案</p>
+<hr>
+<p>第一个迷茫是我的生活应该怎么过的迷茫</p>
+<p>这种迷茫体现在我从大一下开始就没有上过课（只上过很少的几节课），不管我认为我自己的状态如何，我不愿意去教室并且缺少从教室、从老师那里获取知识的能力</p>
+<p>究其根本，大概是自我欺骗虽然能在表面上欺骗自己，但是最后的逻辑必然是对所有课程从内心深处的否定</p>
+<p>至于为什么还有一些可圈可点的成绩（某几门课的），这主要是自己尚存的自尊，或者好强的性格所带来的</p>
+<p>大二下学期整个人的状态跌入谷底，这种情况下更没有什么自尊可言了</p>
+<p>我的生活一个很重要的点就是要不一样，要open，要开阔视野，这是我认为我后面生活需要有的一个点</p>
+<p>我不能接受我的生活是在校园里面，千篇一律</p>
+<p>那么就是这个学期、下个学期，要出去看看，去不同的地方看看，接触不一样的领域的知识，接触我感兴趣的领域的知识</p>
+<p>在这个背景下，专业课的学习毫无疑问是要会被有意无意地压缩的</p>
+<p>这一部分是对我大学生活的总结吧</p>
+<hr>
+<p>第二个迷茫是我的生活与我的认知的迷茫</p>
+<p>抱歉，这个部分我无法展开讲，我也无法和任何朋友或者同学讲</p>
+<p>核心点就是我的生活中有很大的外力作用，这个外部力量从根本上改变了我的生活</p>
+<blockquote>
+<p>phillip:”这个外部力量还要持续多久？”</p>
+<p>“很久很久，至少十年”</p>
+</blockquote>
+<p>今天和phillip聊了很多东西，比和owl聊的要更具体一点，因为就这两天又发生了一些事情，我自己有了一个更深刻的认识</p>
+<p>我不是要一个圈子，圈子这个东西太虚了</p>
+<p>我要的是能力，是能够接受更大的责任的能力</p>
+<p>这个能力一方面是我自己的智力、知识，另一方面是我周围朋友的能力，或者说我借力的范围</p>
+<p>后者我读什么专业都差不多，而且大概我现在这个圈子就已经很优秀了</p>
+<p>前者是我要考虑的东西，这部分的内容不是我自己读cs或者读别的能够获得的，一定要我去扩展出去</p>
+<p>我要承担起所有我要承担的责任，</p>
+<p>有陌生人的责任，有朋友的责任，有家庭的责任</p>
+<p>如果有能力，我当然努力承担所有，但是如果能力不够，我要承担好家人的责任</p>
+<hr>
+<p>感谢lpy，yifelse，threonine，owl，phillip</p>
+<p>和lpy那天的交流使我对我自己的本性倾注了更多的思考，那天是我很久以来第一次直接疑问我之后的人生应该怎么走</p>
+<p>和yifelse交流的时候我还思想还不是很成熟，但是yifelse还是听完了我不成熟的想法，和他交流的过程中我初步总结了过去的生活</p>
+<p>和的交流给了我更多反思自己的机会，会去权衡自己每一件事做的是否合适（当然总是权衡不对），会去思考自己的心理究竟怎么想的；可以说那段时间精神状态不好，但是本身是因为触及了一些自己回避很久的问题，对我来说是很深刻的交流</p>
+<p>和owl的交流没有能够得出什么结论，但是这本身是我极度迷茫的产物，当时没有外界刺激很难想明白这个问题了，但是和owl聊一聊还是好的，总是能和他聊一聊就是很好的</p>
+<p>最后是和phillip的交流，过去两天回家了然后发生了很多很多，所以和他的交流之初我自己已经有一个方向了，沟通的过程实际上是在这个方向上探究的过程，虽然答案是否正确尚不清晰，但是我觉得这次的解比之前的看着要正确许多（笑）</p>
+<hr>
+<p>昨天从家里出门是哭了的，当然是等到爸妈都看不到了再哭，坐在路边的长椅上，然后坐了好久</p>
+<p>当然更主要的是累了（笑），妹妹感冒传染给我了，好累</p>
+<p>刚刚坐在椅子上会想，要是有一个人能够陪着我，温暖我，那是多么幸福啊</p>
+<p>但是没有的，<strong>只有自渡</strong></p>
+<hr>
+<p>等我找句不一样的诗，之前那两句都不太对</p>
+<p>找不到了（笑）文学修养太差了，不凑合了，这里留个空</p>
+<blockquote>
+</blockquote>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/03/30/72-Blog/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">72_Blog</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/03/06/71-Blog/">
+                        <span class="hidden-mobile">71_Blog</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+<span id="busuanzi_container_page_pv">
+  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+
+</body>
+</html>

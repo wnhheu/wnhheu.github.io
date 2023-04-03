@@ -1,0 +1,593 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="南海十三郎">
+  
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+  <title>Twentieth Blog - zty</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 90vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>zty's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/blog_background.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Twentieth Blog">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-05-12 00:00" pubdate>
+        2021年5月12日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.8k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      17
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Twentieth Blog</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021年5月13日 凌晨
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h1 id="南海十三郎"><a href="#南海十三郎" class="headerlink" title="南海十三郎"></a>南海十三郎</h1><a id="more"></a>
+
+<blockquote>
+<p> 因为之前blog没有做分类，之前关于《可可西里》、《盗梦空间》的影评是混在随记里面的，这算是第一篇专门的影评，哇，显得我好专业，之前还看过《1917》，忘记写过没有，如果没有有机会写一下，但那部片子只是尚可</p>
+<p>没有太想好影评的格式，先随便写写吧</p>
+</blockquote>
+<h2 id="为什么会看"><a href="#为什么会看" class="headerlink" title="为什么会看"></a>为什么会看</h2><p>同学推荐的，考完数分不想学习了，毕竟ddl只要不是今天的都不算ddl</p>
+<h2 id="叙事手法"><a href="#叙事手法" class="headerlink" title="叙事手法"></a>叙事手法</h2><p>开头先写南海十三郎之疯癫，片尾对应</p>
+<p>以说书人之口展开故事</p>
+<h2 id="开头"><a href="#开头" class="headerlink" title="开头"></a>开头</h2><p>这部电影一开始事实上是比较平淡的，讲南海十三郎小时候的一些轶事，表现出他与众不同，但事实上算是比较俗套的</p>
+<p>后面是一个很俗套的剧情——去舞会对女生一见倾心，然后追着去上海，最后被甩了，女生出国了，十三郎回家，我发现我在这瞎概括，不过问题不大</p>
+<p>开头着实比较平淡，我看的时候不时分神</p>
+<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>这部电影有一个地方很打动我</p>
+<p>薛老五在唱十三郎的第一部曲《寒江夜钓》时（不知道是不是这首曲），画面上是十三郎追着女生去上海，然后女生出国之后十三郎在上海四处寻找，露宿街头，但听到人力车的声音仍会惊醒，想看看是不是她。这一段配上这段曲，我第一次真切地感受到曲里面蕴含的情。</p>
+<p>情，动人</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>毫无疑问，十三郎是一个很怪的人，他不近人情，有傲骨</p>
+<p>后面一个很打动我的地方是他和徒弟（忘了名字了。。）在那里唱词、记词</p>
+<p>怎么说呢，这一段好享受，好开心，可能这就算是遇到了一个可以分享的知己</p>
+<p>这一段剧情并不新颖，在之前就预测到剧情了，但是电影通过戏剧搭建了一座桥梁，把我接到了电影里，完全融入到了电影之中</p>
+<p>我真的很受触动，这种投入，这种对自己从事的东西的热爱，这种谈到戏剧就两眼放光，这种对戏剧反映的思想的完美要求</p>
+<p>这种执着，这种痴迷，啊，非常好，非常好，这部电影很打动我</p>
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p>这部电影用一些很荒诞的手法使人捧腹大笑，但是笑完之后顿觉悲凉</p>
+<p>一个是他去捞做舞姬的表妹，就是去砸场子的，哈哈</p>
+<p>一个是去劳军，一边是报销党国，以一个老军官的群魔乱舞和一边的“肉弹”相对比</p>
+<p>一个是后面抗战结束，十三郎被人请去写剧本，然后的话写的剧本是人和猩猩联合起来去打到狒狒，哈哈哈哈，我写的时候还在笑，当时真的是抱柱大笑（柱子是上床的扶梯）</p>
+<p>还有一个是后面表妹请他过去拍戏，改了他的剧本，搞了一部死人复活的电影</p>
+<p>这么说呢，这些元素和这部剧的风格总体是不太着调的，我没看过《唐人街探案3》因为觉得水平不够，事实确实差评如潮，我之前看过1还是2，就觉得那里面的笑料都是无效的堆叠，看完之后对这一系列完全不抱希望</p>
+<p>事实上我对电影只有三档：好（强烈引起我内心共鸣，让我融入进去），还可以（就是还能看，能让我看完之后有所得，并且中间比较投入），垃圾</p>
+<p>可能这些元素算是抖机灵，或者一些比较简单的玩笑吧，但是这样的元素与整部剧的风格形成强烈的反差，颇有几分契科夫的味道，在荒诞之中讽刺现实，讽刺这个现实的庸俗</p>
+<p>讽刺天才与平凡的世界之间的冲突</p>
+<p>但是如我所说，这些元素还是有抖机灵的感觉，和整部电影的基调不同，但我也说不太出来，我觉得可能这部分太。。欢快了，多次出现打断了整个电影的情感叙事，而且经不起回味，我现在想来觉得不是很好，但是瑕不掩瑜</p>
+<h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><p>这部电影，我不太好说它是不是悲剧，因为在其中还蕴含着对人生的思考</p>
+<p>外人可能觉得十三郎满身臭气，很脏</p>
+<p>但正如他说的</p>
+<blockquote>
+<p>我洗心就够了</p>
+</blockquote>
+<blockquote>
+<p>我和耶稣他老人家又不熟，去他那拜访多不方便</p>
+</blockquote>
+<blockquote>
+<p>天堂？天堂太远了，这就是天堂，你看那里有许多白衣天使</p>
+</blockquote>
+<blockquote>
+<p>永生？永生多痛苦，想死都死不了，一直痛苦地活下去</p>
+</blockquote>
+<p>好伤感，我的天哪，真的伤感，可能和我的感受比较像吧——对生活意义的迷茫，对生命的迷茫，但我还没有想明白</p>
+<h2 id="5"><a href="#5" class="headerlink" title="5"></a>5</h2><p>不知道十三郎究竟是疯了，还是装疯，还是有时清醒有时疯癫</p>
+<p>这三种推测都有其合理性，啊，但都是很悲伤的事情</p>
+<p>举世皆浊我独清，众人皆醉我独醒，或许是这种感觉吧</p>
+<h2 id="6"><a href="#6" class="headerlink" title="6"></a>6</h2><p>差不多了吧，还有很多细节，再梳理要花一些时间了，而且意义也不是很大</p>
+<p>感觉还是刚刚看完之后的描述比较好：</p>
+<blockquote>
+<p>那种追求、那种不羁、还有那种悲凉</p>
+</blockquote>
+<p>因为这部电影我对戏剧很有兴趣，感觉戏剧里是含情的，戏剧是一帮很热爱的人去写的（哈哈，被这部电影打动了）有兴趣想了解一下，同学另外推荐了一些，有空看一看，之前不是很了解</p>
+<h1 id="随记"><a href="#随记" class="headerlink" title="随记"></a>随记</h1><p>很奇妙，两个小时与世隔绝，刚刚看pyq，又有许多新的消息，但这些好像都是很久以前的一样，很妙，很妙，感觉自己和周围的世界在两个频道，世界在运行，而我周围的这一片和我一起静静地看了两个小时的电影，看一个天才的故事，看一个人的一生</p>
+<p>好喜欢电影，通过电影能够在短暂的时光中感受一段很长的时间，感受时光的流逝</p>
+<p>天哪，感觉太沧桑了</p>
+<p>生活还要继续，明天还有很多任务要做，啊</p>
+<p>很多东西都好奇妙啊</p>
+<p>写的时候还是12号，写完就十三号了。。还没刷牙，又要去扰民了。。</p>
+<p>同学还和我提了一个聊天方面的建议，但是这个我并没有想的很清楚，有点复杂，但是有一点头绪了，后面有契机再想一想，这一块儿之前没想过</p>
+<p>就这样吧</p>
+<blockquote>
+<p>心声泪影女儿香，燕归何处觅残塘。</p>
+<p>红绡夜盗寒江雪，痴人正是十三郎。</p>
+</blockquote>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%BD%B1%E8%AF%84/">-影评</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/05/14/21_Blog/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">21_Blog</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/05/10/19_note/">
+                        <span class="hidden-mobile">Ninteenth Blog</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+<span id="busuanzi_container_page_pv">
+  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+
+</body>
+</html>

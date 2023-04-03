@@ -1,0 +1,593 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="第一次装电脑">
+  
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+  <title>35_Blog - zty</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 90vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>zty's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/blog_background.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="35_Blog">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-07-18 23:29" pubdate>
+        2021年7月18日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      23
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">35_Blog</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021年7月18日 晚上
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h1 id="第一次装电脑"><a href="#第一次装电脑" class="headerlink" title="第一次装电脑"></a>第一次装电脑</h1><a id="more"></a>
+
+<p>上一篇blog的内容怎么说呢。。啊，有很强的感情色彩，我觉得我也不是很清楚，稀里糊涂的</p>
+<p>这是一篇算是技术向的blog吧，如果是一篇随记的blog，我现在没有这么充沛的情感</p>
+<h2 id="电脑的配置"><a href="#电脑的配置" class="headerlink" title="电脑的配置"></a>电脑的配置</h2><p>我一共给我妈报了三个配置，本来一开始想的是“天哪，这电脑不上配置一还能算是电脑吗？”</p>
+<p>但这个电脑算是给我妈配的，我是用它来练练手，当然很长一段时间可能都是我在用，所以我又列了配置二和配置三</p>
+<h3 id="配置一"><a href="#配置一" class="headerlink" title="配置一"></a>配置一</h3><p>CPU： R7 5800X</p>
+<p>主板:    B550</p>
+<p>显卡:     后面再说，也可以买一个亮机卡</p>
+<p>内存：科赋 雷霆 DDR4 3600 8G×2</p>
+<p>固态：浦科特M9P PLUS 1T</p>
+<p>电源：安钛克HCG850</p>
+<p>机箱：联力 双子座 黑</p>
+<p>散热：利民 冰封幻境EX 360水冷</p>
+<p>3569 + 689 + 1099 + 899 + 599 + 599 = 7454</p>
+<p>评：败家啊，太败家了，加显卡这一套要11000</p>
+<h3 id="配置二"><a href="#配置二" class="headerlink" title="配置二"></a>配置二</h3><p>CPU： i5 10400</p>
+<p>主板:    B460</p>
+<p>显卡：核显</p>
+<p>内存：科赋 雷霆 DDR4 3600 8G×2</p>
+<p>固态：浦科特M9P PLUS 512GB</p>
+<p>电源：长城（GreatWall）额定450W G4</p>
+<p>机箱：找一个 100-300</p>
+<p>散热：利民 120 风冷</p>
+<p>1349 + 729 + 689 + 699 + 299 + 200 + 219 = 4284</p>
+<p>评：这套还可以吧，后面加显卡总体上估计6000块钱</p>
+<h3 id="配置三"><a href="#配置三" class="headerlink" title="配置三"></a>配置三</h3><p>CPU：13105/13105F</p>
+<p>主板：B460</p>
+<p>显卡：核显/独显 </p>
+<p>啊，别的和配置二差不多，看预算了</p>
+<p>内存、固态、机箱、散热都可以降下来的，前面两个配置也可以降下来</p>
+<p>评：这套我估计的预算是3000-3500，如果核显的话可能2500就可以搞定</p>
+<hr>
+<p>最后用的差不多是配置二，事实上当我列完三个配置之后，我就觉得配置二很好，配置一完全是发烧友了，配置三我个人觉得不会多差，但是很多小的地方的品质都会下降，当然也不太会影响使用，配置二对我来说已经很足够了，后面再配一张中上游的显卡，完美！</p>
+<p><img src="1.jpg" srcset="/img/loading.gif"></p>
+<h2 id="为什么配电脑"><a href="#为什么配电脑" class="headerlink" title="为什么配电脑"></a>为什么配电脑</h2><p>啊，你要说真的有很强烈的需求吗，可能要打打游戏算吧，但是这个也是很相对的，我还是希望我少打游戏，所以这也算是一个伪需求吧，只能算是需求的一部分</p>
+<p>别的更多的我觉得是我个人对电子产品的一种。。怎么说，追求吧</p>
+<p>之前打过一个比喻，就像女生有一柜子衣服还要买衣服一样，我对于电子设备可能有一点这个感觉</p>
+<h2 id="装机的过程"><a href="#装机的过程" class="headerlink" title="装机的过程"></a>装机的过程</h2><p>推荐一个B站的视频<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1qx411d7BA">电脑装机</a></p>
+<p>他讲的很细致了，装一台电脑实际上挺简单的吧，就和拼拼图可能差不多，因为模块都是集成好了的</p>
+<p>讲一讲我装机过程中的一些经历吧</p>
+<p>因为我之前说过，我买了一张桌子，所以我原来的桌子就变成了储物间，这使我有很充足的空间来布置主机</p>
+<p><img src="2.jpg" srcset="/img/loading.gif"></p>
+<p><img src="3.jpg" srcset="/img/loading.gif"></p>
+<p>这是我寝室目前的大体布局，显示器的线有一点乱。。这是因为整体的布线还没有做好，我还买了几个魔术贴，明天或者后天会理一下线；当然桌子也有一点乱。。不要在意</p>
+<p>主机买大了。。这是我爸选的，我之前没注意，昨天晚上很匆忙的下单（为了快递早点到），下完了发现主机是ATX的，事实上买micro-ATX可能会更好，但是问题也不是很大，ATX的机箱可以说想安什么安什么</p>
+<p>然后有一个问题就是我的鼠标、键盘都是有线的，怎么去连主机，而且连完之后笔记本怎么办</p>
+<p>这时候就体现出我斥巨资（败家）买的显示器的优点了–它有很多接口，我可以把鼠标和键盘插在显示器上，然后用数据线连接显示器和主机，这样可能可以做到比较方便地在笔记本和主机之间切换，当然事实上可能会有一些问题。。再看吧，如果不理想的话可能要另外配外设了</p>
+<p>唔，我好像用了倒叙的手法</p>
+<p>现在从装机开始开始说</p>
+<hr>
+<p>拿到cpu和主板的时候真的是感觉很震撼 ，这种工业生产出来的产品的。。很有科技感的美，嗯嗯，是这样的</p>
+<p>装机当中遇到的第一个我没有预料到的问题就是涂硅脂</p>
+<p>因为对硅脂这个材料的不了解，我拿银行卡来涂的，但是银行卡有个问题——太大了，不方便操作，还把硅脂弄到了cpu外面去。现在想来可能用手直接抹效果会更好</p>
+<p>啊，在硅脂涂好之后我发现我散热器的支架位置搭错了，散热器的支架是正方形的两条平行边，我选错了，本来散热器的风扇应该对着内存条的，然后我搭出来是垂直于内存条的，然后又是拆掉重装。。装完之后发现支架的正反又搞错了，又是拆了重装。。</p>
+<p>后面把内存条安上去之后就拿着电源开始琢磨怎么给主板通电</p>
+<p>遇到了一个问题。。说不清楚，markdown引图片有点麻烦，就是一根线正常是两头，但是电源线在中间多了一个头出来，相当于转接了一下，当时就搞不明白这个线应该怎么接，后面想来想去觉得就直接拿两头接就没有问题</p>
+<p>然后接上电源，通电，短接power switch看cpu能不能正常工作（工作的话会亮灯，风扇会转），没反应，重来，没反应，如此数次，心态崩了</p>
+<p>然后开始debug，发现是电源的一根接线没有接好，掉下来了，然后再插回去发现就可以正常运转了，看到风扇转的一瞬间真的好兴奋，就像cpp大作业写完了，找到一个bug，de掉，然后发现de掉的就是有问题的点，然后测试点过了的开心</p>
+<p>后面就是把主板和电源安装到机箱上面去，这一步挺简单的，就是体力活，但是我的机箱的规格和视频中的不一样，一开始我用错螺丝了，要拧掉重新安</p>
+<p>接下来装内存条，我用的是m.2固态一般，直接插在主板上就可以了，但这个和视频里不一样，我现场琢磨了一下，很幸运，琢磨对了，如果是SATA的固态硬盘或者移动硬盘是要接在机箱上的，还要接好多线，m.2固态真的方便</p>
+<p>最后就把各种线接好，并注意一下线的整洁</p>
+<p>然后就好了！</p>
+<p>接下来就是装系统了，又推荐一个视频<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1DJ411D79y?p=1">操作系统安装</a></p>
+<p>我用的是官方ISO安装，就是把操作系统的安装程序放到U盘里面去，然后用U盘在新的主机上安装操作系统</p>
+<p>这里我遇到了一个bug：在进入到操作系统安装界面的时候会报这样一个错误：</p>
+<blockquote>
+<p> 找不到设备驱动程序</p>
+</blockquote>
+<p>这个问题比较不好搞，有的人说重新插一下U盘，或者注意是USB2.0还是3.0，但是这些对我都没有用，最后我看到了这样一个<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/1387078352733747980.html">解答</a></p>
+<p>通过修复计算机——打开命令控制行——输入setup.exe，成功运行安装程序，解决了这个问题</p>
+<p>然后就亮了！win10就装好了！</p>
+<p>当win10的操作界面出现在我的面前的时候，那种感觉是真的很奇妙的，就是上午还是一堆零件，组装了五六个小时，它就真的变成了一台自己可以用的电脑，而且以前的电脑都是装好的，但是这台电脑是我自己组装的，完全出自我的手，这种感觉是真的挺奇妙的，而且当时也好开心好开心，真的开心，和英语拿了90分一样开心</p>
+<h1 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h1><p>很大的一个问题就是我这个新的主机是全新的，基本上没有装什么办公软件，而且大部分数据都在笔记本电脑上，我不是很清楚怎么样能够实现笔记本、台式机之间的数据共享，这可能是后面需要研究的一个问题，但是不得不说，这个台式机的性能比我的笔记本好太多了，当然便携性不是一个量级的，毕竟定位不同</p>
+<p>哦，顺便提一句，我blog的访客统计好像又有问题了。。可能要看情况修复一下</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/07/25/36-Blog/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">36_Blog</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/07/15/34-Blog/">
+                        <span class="hidden-mobile">34_Blog</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+<span id="busuanzi_container_page_pv">
+  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+
+</body>
+</html>

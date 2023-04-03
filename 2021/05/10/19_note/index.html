@@ -1,0 +1,536 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+  
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+  <title>Ninteenth Blog - zty</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 90vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>zty's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/blog_background.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Ninteenth Blog">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-05-10 00:00" pubdate>
+        2021年5月10日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      6 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      1
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Ninteenth Blog</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2023年1月5日 晚上
+                
+              </p>
+            
+            <div class="markdown-body">
+              <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="Oh, these decrypted content cannot be verified, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="3b4760d67b2e6d6a443f9821f09e63aaa5436bd454f46abbb57c174d2820c061">6a17aa49774c3f4f1c037479f2e201993f25824748fb7ca2c454a08e1ffd5a00675fc8b52c9057f31e28e09b06ba775dcb61acae50021a049fdd21a92f1fa1211d05927202d490d27d02c86f928f1b60c399ca6e8b140568fa190bf54618531b32eb357780004fb3220a6e685da64fd758778a0bf342cdbac849335d5bb875a2009723ebc0bac18384d1fe24b1334228a1ba492ecd6b4718c56e3312ea866188f0bf3c36f6207805e0c566daec4e9fa5310c24d8cb2c6638ab77df917282038f8e1ae0d43fe647a80cab8ac2676511b4b8877d70340484271206ad566ad064ae884f6a4164ce3d452f7ddc9d2dff03a2966478c63980c5c0ff4fb4ee800a6184bb259a28a728fd508755f1c770b27aeea81ccc13f00e9239542c38c36122f7f8c3df13698485fc3bea793225f36e54d97cd4b846a4c72cac670b7ce941a786e40957204a8705115d7f70d0480f913eada8a92a8740b318b46402f80dc6c542c60bf3c5a0a8d71055c96d6562def37a84187d8e94cfd5e8e66bd15ac68bcc42d9a2022a8951a998cdac2254e2ed40639f58ccdf043ef20c1489fd42def11ef5bc3fe081e0274587dd9ffa36476a6dd1269be37395af17503cf1a9e3e60e8a8480abd16027acc6bd63ad8fc8a301820c5d231d351a80edb005233af9f4938063c326f593f187acc420bf4e7b97df46444c63e3c8b8a47446b3579c7b5338cb9570b4f45f53994d43b1287340add5c73a2c87195595566366d276b628d5e134589f7c497ba4b2ff51d2f1cd2ab443707deef59fdc00b50eaad160aa1599a4d64f8408977e677e6e6336285398dbc44666b3298ad5bf407fba8e3efa054553908eef4aca9f114f950e5d7d21ac63fed49b19b1badcba39854a98c0c16dd2a6c0b48a4eb42afec755dedd9c4397ece2970467aa53351d3d6e53e788852bee013f1d611b62a977f879ba9862c79a7804b75de977927c2ba9673b77a2ae8737807083cc21418e168c6595d75f04d4a0e59845ca101c75be59a87121e651e893ee358c45e53de33b2cb0591bed0bf4eeb7df926580391fe4e9253b4561c418feb7e2541e7558535409dba965c6ba011a36a21dade2d71cacdd93aa0edf68c606a588ef11ceea7fc732256144a1d8baffd018a835c556fe37c5d53aeb70357e0fac620a44996d98a9589e5cc3180556052874c3d38b86ba18e4be48ee56c2716b9ce9d446261a516f1f43d5be12e284e629396c98740b930d294e19db3384cdceb3a70d0bccd702733967e168e470ed0381956ed2094acbb004d32ed98fbb6bff09544c6c3f8b0b76a69a3298b7883d9baf6f5f23374d7a39de209a6717c358042a2dd7a07caa24bdc9f9c0c18c66ce0cc24151bb5280dc5fe196958d1797eabff1a546f0e6873ba5abc17d1975374fc1efe2dffcc2d430829871deefc9b400c94bcacf32f49f0fd890b7187a5638ae3f72a29b9b0412c08d746ac51f30dd201ced64775ab59a8c047bf0e94b582033b371e880d66ea9e3d6e27f42d089fd08da346f6f7a8cb08f7cb496bc14b818d966152dbdee775c769894361b220bef02e0c26e539d542028a095b3e168d2f02246295e68d8d0acd0e9e9b22abad84db5faad78a7ad0e7bb43fe19c69cdabeddf5f9929df3dc6a255ea5c90c5d4e52550e40570dfab4b4cd259d8119062ed2bb7b7be075044c3a8b34f857ca50ffbf1d5aca6c63505b1659263cc9fe7c13931d67778c670f2f80ea91278e78254bb49d294c38ccc358fbe78ee445261c09c8be5b3994a5977136f396f384d4f42fa61ea59a1e616193260e849dba5c3f15d32bbb4ecd50b95c6fa8e998efc99eb2280ed12b532cfc3ff083777590f2f7d384f4984e34fc929d3985755c66e932cf55a281ee9494f7bfb8483ac86a22cf1a45fa1422fe239aa8a517722a41e08d613683c0efe756ecd8896152ff9102783ac34cc88cff35ef15a5d895877d2c9d6779055a1fe64a9abf7c5feb3997b8dd2d26e28e74f99158b203fe2a16a15314008996fe4f6d7ced8400f3b8a6f52b628617b4ea6e73a56b59f5744cfc3164112ba628731582075fa65b05926c119d05a6e1b7e1617737d5bcca6065af050bda0baff363167ed314e3c7de97d9eb5e8b1e5445e2c313ca307082494973df8d6e6c83e8349edd951db03e387dac534b3d42bcab91579db98b095cf3816b874359631fb4d3882bf618ae4387de4fa1496256c7e93245d81945a077977b1d260703ad3d7d30365e8b68aeaa011cd42e97cab9310b06de6b0a3544c19b55bbd17054b14811a7a9e3ba85979cbd6eaba76b35f81612b21147ec28e001e11ddc63effa1c14329d776585eca8d1050b29bbfa07308e06d8de58fbbf216931348f5ef2d402ec015773f747251ea091da090835c6d1c273f92a3e97314cea63c872ce22a63d728ffe0e6d9e78d4a6317d479e4a8317673b99efa718557c56e8e907a5ac2b0db3bc9b5367ddcc9fe9c024378b2430deed289a4e5189128e6c33fbf211a02fe163e686711f2280183e8d312e4bf4df632510c73da69a525a8222b76692d031ec600dab1b7546cf09c1da39d358fec96ed0871bc844c70362a0f86e93c72bae272f4bfb1cebc72d32611cfad80b51e2a4152423473516261c506c7581d1a697fa8c6aaa6d489196c4bc61e0fc22b44a95e837a51df2b54ec8bd6cb072438af6535cb025efb9e918b7325c6326120d6d86384b1d9814a691e4ffde27478e825754f23782faf3a7847de9d0a44b0ac0be82ecf1160e7ea14bb0f9bf4ec35cef260824092ae3345311f0ec26485cb4e81cb05bd22e7210e7e8e303c6303ed0ece10245ddd7cbcbc0ca47e06ba94c802af2c61fccef6adba80f2b923b941c37d9554c2b57d2be6be5a8d93dd9e8459a8ae3f46af7de8a430ba6c58ef19a572e12c3feaffa309eb1c158df6e27dd4cee27226a1f8cdb4548911d15643c5250ecf699715366a6b033aa90439461ec119251226f937372415f40b38a961238d535dba82f203c407c31e88a2c6f261b204aa66411be6093781d36849cf3e7acff6c37e935e7a3e2ea50511af09e953fe8dd70e7a5018add5f1c75011b7cc5df288ea30d00864f317bdfda61917bf0e928434e28443c9f70b2448a6323f551887403cf9c3a69eb8e0f79a6341dcce447a8b053bc74b8614ab306b178e3882582d4f65e6c2ce778fac2f887acbdf870d3d4895b8925a51220288b3c4d55a27884e02ab8f41d6bc5040b683c760f21c59341df08bd4e9aeed555bcf8666d93353e7809ab6b07d340e4f67ec4b72d85386f9e067b6821edb71df1e081a9c3ef807af61ee1297b25967a5eeae571b36714366f6afe42caebcbade82013471da978fb26aa1fabab661a82f78805e47</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E8%AE%B0/">-生活随记</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/05/12/20_movie/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Twentieth Blog</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/05/09/18_day_summary/">
+                        <span class="hidden-mobile">Eighteenth Blog</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+<span id="busuanzi_container_page_pv">
+  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+
+</body>
+</html>

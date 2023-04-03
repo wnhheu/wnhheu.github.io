@@ -1,0 +1,564 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="随记，这几天挺有意思的">
+  
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+  <title>50_Blog - zty</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 90vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>zty's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/blog_background.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="50_Blog">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-11-18 18:20" pubdate>
+        2021年11月18日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      23
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">50_Blog</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2023年1月5日 晚上
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h1 id="随记，这几天挺有意思的"><a href="#随记，这几天挺有意思的" class="headerlink" title="随记，这几天挺有意思的"></a>随记，这几天挺有意思的</h1><a id="more"></a>
+
+<p>先说让我觉得最有意思，最不解的一件事情，就是我收到了一个书扣，或者说书签。。这件事情在我看来真是太神奇了，我以前最多也就是在梦里想一想有人可能送我礼物，没想到真的会有人送我礼物。。</p>
+<p>但是在我的认知之中这是一个根本说不通的事情，就是说</p>
+<ul>
+<li>首先，对方怎么会有我的联系方式的，在这个时代，知道我电话号码的人可以说很有限的</li>
+<li>先不管怎么知道我联系方式的，理论上可以根据我给过谁我的联系方式来做推断，但是我认为这些同学都不可能，而且也都问过他们了（我好呆）</li>
+<li>然后推测可能是谁送的，送的动机是什么，这是最令我困惑的一点</li>
+<li>你说是恶作剧。。我觉得并不太可能，因为我个人觉得这个小礼物是颇费心思的，我事实上很喜欢，很感谢。这个书扣上面是四个字“长风破浪”，读我blog的应该不时会看到这四个字，我很喜欢李白的那句诗，“长风破浪会有时，直挂云帆济沧海”，而且我最近刚好重拾了读书的兴趣，经常会读一些书，我真的对这个书扣非常非常满意，这两天就在用。而且因为“长风破浪”这四个字，它和我别的书扣可能也不太一样，因为很对我的胃口，我希望我不会弄丢它。因为这个真的很戳中我，至少我现在是这么觉得的。</li>
+<li>更何况，谁恶作剧会花五块钱运费，买一个四块五的东西。。而且还事实上这么正经。拼多多三块钱包邮的恶搞的小物件不是可以起到更好的效果。。</li>
+<li>你说是男生送的，我认识的男生好像没有哪个会有这个闲情雅致，而且即便有的话，直接和我说就好了啊。。没什么好匿名的</li>
+<li>你说是女生送的，我认为女生倒是蛮有可能有这个细心的程度去送我这样一个小礼物吧，但是同样地，动机或者说理由呢。。这是我百思不得其解的事情。。我认识的同学好像没有谁有动机来做这样的一个事情，不过事实上我刚刚写的时候意识到我漏了一个人。。可能要去问问她，不过我觉得也不是那么可能</li>
+<li>就是你找不到一个合适的逻辑，就像你写了一个完完全全正确的代码，但是出现了很奇妙的error，你怎么看都觉得这段代码是正确的，但是实际上就是会有错误</li>
+<li>和同学交流的时候他们都认为既然对方送了，就会沉不住气，但我事实上是在好奇这个逻辑是什么，你要说我人见人爱花见花开，那我很能理解逻辑，问题我的交际圈实际上挺小的，而且这个人很明显很了解我，而我认识的同学好像都没有逻辑来做这件事，所以奇妙，所以我这两天一直在思考，不过可能到最后找不到的话就像代码错了一样，最后直接找一个正确的答案上去；后面我可能就放过这件事情，让它成为“大学阶段n大奇案”之一吧，但是在我正式放弃之前，我会一直思考这个问题的，因为你总归要能够找到一个合适的逻辑，这件事情不可能没有逻辑，就像代码不会毫无理由的错误一样，只是可能现在我没有能力找出这个bug</li>
+</ul>
+<p>我大受震撼，而且也非常非常感谢，可以说是我收到的最能打动我的礼物之一了，也正是因为这个原因，我很想知道是谁送的，我有很感动（笑）</p>
+<p>噢，我现在知道是谁送的了，哈哈哈，可能写出来可以理一下思路，也真的很有意思，我前面提到我想到了一个人，事实上就是她，我想到那里的时候我就觉得逻辑已经完全理顺了，我可以确定99%是她（笑）</p>
+<hr>
+<p>唔，问求课上了一半，中间下课的时候就跑出来了（笑）因为我觉得坐在教室里没有意义了，坐不下去了，就直接翘课出来了，如果我的腿没事的话可能会走一走，但是现在腿脚不便，也就只能骑车了，说实在话，吹的头有一点不舒服，但是骑了四十分钟？边骑边想，想了一些吧，现在算是比较平静了</p>
+<p>说实在话，我找到问题的答案了之后，我这篇blog的后面内容会改好多，就是我这篇文章的标题“这几天挺有意思的”，之前要写的现在可能已经换内容了</p>
+<hr>
+<p>我想了想，为什么好几个同学都劝我等待，觉得对方一定会沉不住气来找我，但是我自己就一直一直在思考这个问题</p>
+<p>事实上如果我真的等待，可能她也不会来找我？如她所说，“东西到了是主要的”，但是另一方面，她肯定也是期望我可以猜出来的吧，如果我一直猜不出来，可能是会沉不住气的吧（笑）不过我确实猜出来了</p>
+<hr>
+<p>事实上就和高中化竞做元素推理题一样，给出了一些条件，然后你去推理是哪一个元素，如果推的不对，你当下就知道自己做的是错的，然后只是糊一个答案上去，事实上我之前去问那些同学，我都有一句“虽然我认为不太可能，但我还是问一下”，这就和做元素题的心态很类似，“万一我自己的逻辑出错了，答案就是对的呢？”（当然实际上没有发生过，我是不是应该为我的逻辑推理能力感到开心），而刚刚去问她，虽然也加了这么一句，但是我实际上已经知道答案了，就像元素推理，你推出来的那个元素一切性质都和题目的描述符合，推出来的那一刻，你就知道你推出来的是正确的，哈哈，32届国初的锗！对我很有意义的一个元素，一战成名，当然后面也就不行了（笑）</p>
+<hr>
+<p>我刚刚骑车的时候事实上有一点点想哭，当然我知道按照我对她的理解，这只是一个小小的礼物而已，如她所说，没有别的意思，是一种祝福，我深以为然</p>
+<p>但是对我而言，可能不是这样，从小到大，我好像一共没有收到过几次礼物，更没有收到过这么。。符合我心意的礼物，这对我来说的意义是很大的，我本来啊这篇blog后面准备写孤独的，但是找到答案之后我可能不写孤独了，可以说这个书签真的温暖到了我</p>
+<p>真的真的有温暖到我，尤其是在我可能比较艰难的一个时候吧，她应该看我的blog的（笑）</p>
+<p>也正是因为这样，我一直在想是谁送的，我非常非常感谢，也可以说是感恩吧，然后就一直一直在想</p>
+<p>不过一开始没有想到也基本上是因为我下意识地把她排除了，或者说没有太大把握，我不想打扰她，毕竟如果只知道“长风破浪会有时，直挂云帆济沧海”并不困难，这句话一直是我QQ个签，而且我一直没有想她究竟有没有我的电话，我有一点逃避的</p>
+<p>我是在写blog的时候想到的，就很突然，我想这个人知道我很喜欢读书，因为之前和她聊了很多关于书的吧，当然不局限于书，然后又想起来因为一些原因，她有我的电话，而且这个实际上很符合她的风格，然后就确定是她了</p>
+<hr>
+<p>很理想吧，很理想的！但是很多东西我说不出来写不出来。。</p>
+<hr>
+<p>孤单。。孤单。。是有一点的吧，我可能一直很孤单，所以很多时候会处理不好一些事情，但是怎么说呢，感觉在往好的方向发展吧，昨天晚上和plc聊了挺长的一段时间，聊的内容和话题也挺有意思的吧，这段时间也在读一些书，挺有意思的一些书，感觉很多时候还是要回到书中去寻找共鸣（如果找不到人交流的话）</p>
+<p>今天还看了“你好，树先生”我觉得这部电影还可以的，拍摄的手法很有韵味（我几乎没有看懂），但是看完评论之后觉得很精妙</p>
+<hr>
+<p>哈哈，还有一些东西，也不一定适合在blog上面说，也不一定有机会说，再说吧（笑）</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E8%AE%B0/">-生活随记</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/12/08/51-Blog/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">51_Blog</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/11/11/49-Blog/">
+                        <span class="hidden-mobile">49_Blog</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+<span id="busuanzi_container_page_pv">
+  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+
+</body>
+</html>
